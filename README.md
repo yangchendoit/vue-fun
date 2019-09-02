@@ -1,34 +1,22 @@
 # vue-fun
 
-## Project setup
-```
-npm install
-```
+基于@vue/cli构建，使用(https://travis-ci.com)[travis ci]持续集成及构建发布
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+:checkered_flag: 一个有趣的项目
 
-### Compiles and minifies for production
-```
-npm run build
-```
+- canvas 练习
+- css 练习
+- russian turntable 俄罗斯转盘
 
-### Run your tests
-```
-npm run test
-```
 
-### Lints and fixes files
-```
-npm run lint
-```
+## canvas
 
-### Run your unit tests
-```
-npm run test:unit
-```
+主要将一些常见的效果实现
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## css
+
+1. 实现打字效果（typed.js）
+
+## russian turntable
+
+俄罗斯转盘抽奖
