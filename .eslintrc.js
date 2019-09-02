@@ -3,20 +3,16 @@ module.exports = {
   env: {
     node: true
   },
-  extends: ["plugin:vue/essential", "@vue/prettier", "@vue/typescript"],
+  globals: {
+    $: true
+  },
+  extends: ["plugin:vue/essential", "@vue/prettier"],
   rules: {
     "no-console": process.env.NODE_ENV === "production" ? "error" : "off",
-    "no-debugger": process.env.NODE_ENV === "production" ? "error" : "off"
+    "no-debugger": process.env.NODE_ENV === "production" ? "error" : "off",
+    "no-unused-vars": "warn"
   },
   parserOptions: {
-    parser: "@typescript-eslint/parser"
-  },
-  overrides: [
-    {
-      files: ["**/__tests__/*.{j,t}s?(x)"],
-      env: {
-        jest: true
-      }
-    }
-  ]
+    parser: "babel-eslint"
+  }
 };
